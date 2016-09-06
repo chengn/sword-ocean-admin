@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>数据维护</title>
+	<link rel="stylesheet" type="text/css" href="css/initialize.css">
+	<link rel="stylesheet" type="text/css" href="css/DataMaintenance.css">
+</head>
+<body>
+	<!-- 数据添加开始 -->
+	<div class="data">
+		<div class="add-data pos">
+			<h1>sword-ocean数据添加</h1>
+			<section>
+				<input class="inp w691 mb bd" type="text" placeholder="描述"></input>
+				<input class="inp w691 mb bd" type="text" placeholder="模块"></input>
+				<input class="inp w691 mb bd" type="text" placeholder="接口名称"></input>
+			</section>
+			
+			<select id="dataAdd" class="sel">
+				<option value="1">存储过程</option>
+				<option value="2">SQL脚本</option>
+			</select>
+
+			<div class="add-data-btn">
+				<button id="next" class="btn" type="button">下一步</button>
+			</div>
+			<!-- <a href="#"><img style="width: 80px" src="images/fhdb.png" alt=""></a> -->
+		</div>
+	</div>
+	<!-- 数据添加结束 -->
+
+	<!-- 添加存储过程开始-->
+	<div class="store">
+		<div class="add-store pos">
+			<h1>添加存储过程</h1>
+			<div class="mb">
+				<select>
+					<option value="1">存储过程</option>
+				</select>
+				<button id="addSave" class="btn-add" type="button">添加参数</button>
+			</div>
+
+			<section id="addsec">
+				<input class="inp wi mb" type="text" placeholder="第1个参数名称"></input>
+				<input class="inp wi mb" type="text" placeholder="第2个参数名称"></input>
+			</section>
+	
+			<div class="btndv">
+				<button id="storeComplete" class="btn-acc mb" type="button">完成</button>
+			</div>
+			<a href="#"><img style="width: 80px" src="images/fhdb.png" alt=""></a>
+		</div>
+	</div>
+	<!-- 添加存储过程结束 -->
+
+	<!-- 添加SQL脚本开始 -->
+	<div class="script">
+		<div class="add-script pos">
+			<h1>添加SQL脚本</h1>
+			<div>
+				<textarea id="result" placeholder="SQL脚本" class="sip-text mb"></textarea>
+			</div>
+			<div class="btn-sql-add">
+				<button id="addsql" type="button">添加参数</button>
+			</div>
+		
+			<div id="sqlcon">
+				<div>
+					<input class="argleft inp mb" type="text" placeholder="参数名称"></input>
+					<input class="argright inp mb" type="text" placeholder="参数内容"></input>
+				</div>
+				<div>
+					<input class="argleft inp mb" type="text" placeholder="参数名称"></input>
+					<input class="argright inp mb" type="text" placeholder="参数内容"></input>
+				</div>
+			</div>
+
+			<div class="sip-but">
+				<button id="sqlComplete" class="sip-btn mb" type="button">完成</button>
+			</div>
+			<a href="#"><img style="width: 80px" src="images/fhdb.png" alt=""></a>
+		</div>
+	</div>
+	<!-- 添加SQL脚本结束 -->
+</body>
+
+<script type="text/javascript" src="js/jquery/jquery-1.11.2.min.js"></script>
+<script type="text/javascript" src="js/DataMaintenance.js"></script>
+</html>

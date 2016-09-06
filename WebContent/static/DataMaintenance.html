@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>数据维护</title>
+	<link rel="stylesheet" type="text/css" href="css/base.css">
+	<link rel="stylesheet" type="text/css" href="css/DataMaintenance.css">
+</head>
+<body>
+	<!-- 添加失败弹窗提示 -->
+	<div id="alr" class="shade">
+		<div class="context">
+			<span id="alrcon"></span>
+			<button class="alrbtn" type="button" onclick="$('#alr').hide();">重新添加</button>
+		</div>
+	</div>
+
+	<!-- 存储过程弹窗提示 -->
+	<div id="shadeStore" class="shade">
+		<div class="control">
+			<div id="conStore" class="con">您确定要添加数据吗？</div>
+			<button id="yesStore" class="yes" type="button">是</button>
+			<button id="noStore" class="no" type="button">否</button>
+		</div>
+	</div>
+	<!-- SQL弹窗提示 -->
+	<div id="shadeScript" class="shade">
+		<div class="control">
+			<div id="conScript" class="con">您确定要添加数据吗？</div>
+			<button id="yesScript" class="yes" type="button">是</button>
+			<button id="noScript" class="no" type="button">否</button>
+		</div>
+	</div>
+
+	<!-- 数据添加开始 -->
+	<div id="data" class="data">
+		<div class="dvh"></div>
+		<div class="add-data">
+			<h1>sword-ocean数据添加</h1>
+			<section id="addData">
+				<input class="inp w691 mb bd" autofocus value="" type="text" placeholder="描述"></input>
+				<input class="inp w691 mb bd" value="" type="text" placeholder="模块"></input>
+				<input id="portName" class="inp w691 mb bd" value="" type="text" placeholder="接口名称"></input>
+			</section>
+			<span id="exist">注意：接口名称已存在</span>
+			
+			<select id="addList" class="sel">
+				<option value="1">SQL脚本</option>
+				<option value="2">存储过程</option>
+			</select>
+
+			<div class="add-data-btn">
+				<button id="next" class="btn" type="button">下一步</button>
+			</div>
+		</div>
+	</div>
+	<!-- 数据添加结束 -->
+
+	<!-- 添加存储过程开始-->
+	<div id="store" class="store">
+		<div class="dvh"></div>
+		<div class="add-store pos">
+			<h1>添加存储过程</h1>
+			<div class="addhint">
+				<p>存储过程中如果需要传入参数，则脚本中写入？，后面添加参数名称及参数对应在过程中？的序号,从1开始</p>
+				<p><span class="rf">脚本输入： p_pro_test(?,?）</span><br><span class="rf">添加参数:  {name = 1} ,{com = 2}</span></p>
+				<p>表面name参数是存储过程中的第一个参数</p>
+			</div>
+			<div class="mb">
+				<select id="storageList" class="sel">
+					<option value="1">存储过程列表</option>
+				</select>
+			</div>
+
+			<section id="addsec"></section>
+	
+			<div class="btndv">
+				<button id="storeComplete" class="btn-acc mb" type="button">完成</button>
+			</div>
+			<a class="return" href="#"><img style="width: 80px" src="images/fhdb.png" alt=""><span>返回顶部</span></a>
+		</div>
+	</div>
+	<!-- 添加存储过程结束 -->
+
+	<!-- 添加SQL脚本开始 -->
+	<div id="script" class="script">
+		<div class="dvh"></div>
+		<div class="add-script pos">
+			<h1>添加SQL脚本</h1>
+			<div id="hint">
+				<p style="font-size: 22px">添加参数有二种写法如下：</p>
+				<p><span class="fw">第一种写法：</span>参数直接写在脚本中，那么参数使用?代替，同时【添加参数】，输入参数名称和参数对应脚本中？的序号，从1开始。</p>
+				<!-- <p>eg：</p> -->
+				<p><span class="rf">写在SQL脚本中的方式： select * from test where name=? and com = ?</span><br><span class="rf">添加参数：{name = 1},{com = 2}</span>
+				</p>
+				<p><span class="fw">第二种写法：</span>参数不写在SQL脚本中，使用添加参数的方式写入。
+				则对应的参数带有对应的sql，这种方式可以通过参数组装sql</p>
+				<!-- <p>eg:</p> -->
+				<p><span class="rf">SQL脚本输入如： select * from test where 1</span><br><span class="rf">请点击添加参数如： [{'name'='1','content'='2'}]</span><br><span class="rf">下面可添加多个参数</span></p>
+			</div>
+			<div>
+				<textarea id="result" placeholder="SQL脚本" class="sip-text mb"></textarea>
+			</div>
+			<div class="btn-sql-add">
+				<button id="addsql" type="button">添加参数</button>
+			</div>
+
+			<div id="sqlcon"></div>
+			<!-- <div id="sqlcon1">
+				<input class="argleft inp mb" value="" type="text" placeholder="参数名称"></input>
+				<input class="argright inp mb" value="" type="text" placeholder="参数内容"></input>
+			</div> -->
+
+			<div class="sip-but">
+				<button id="sqlComplete" class="sip-btn mb" type="button">完成</button>
+			</div>
+			<a class="return" href="#"><img style="width: 80px" src="images/fhdb.png" alt=""><span>返回顶部</span></a>
+		</div>
+	</div>
+	<!-- 添加SQL脚本结束 -->
+</body>
+
+<script type="text/javascript" src="js/jquery/jquery-2.1.1.min.js"></script>
+<script type="text/javascript" src="js/sword/sword-quant.js"></script>
+<script type='text/javascript' src="js/sword/sword-chart.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+<script type="text/javascript" src="js/DataMaintenance.js"></script>
+
+</html>
+

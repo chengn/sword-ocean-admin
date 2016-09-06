@@ -1,0 +1,165 @@
+@charset "UTF-8";
+/*css 初始化 initialize */
+html, 
+body, 
+ul, 
+li, 
+ol, 
+dl, 
+dd, 
+dt, 
+p, 
+h1, 
+h2, 
+h3, 
+h4, 
+h5, 
+h6, 
+form, 
+fieldset, 
+img, 
+input, 
+button {
+    margin: 0;
+    padding: 0;
+    font-family: "Microsoft YaHei", Verdana, sans-serif, "SimSun";
+}
+
+/*宋体，Unicode，统一码*/
+body {
+    /* font-family: "Microsoft YaHei", Verdana, sans-serif, "SimSun"; */
+    /* font: 12px/150% Arial, Verdana, "\5b8b\4f53";    */
+    color: #000;
+    background: #fff;
+}
+
+/*fieldset组合表单中的相关元素*/
+ /* fieldset, img, input, button { 			
+    border: none;
+    padding: 0;
+    margin: 0;
+    outline-style: none;
+} */
+
+/* 按扭样式 */
+button {
+    outline-style: none;
+    cursor:pointer;
+    color:#fff;
+    background-color:#3385FF;
+    border:1px solid #2d78f4;
+    box-shadow:1px 1px 1px 1px rgba(0,0,0,0.5);
+    /* border-radius:2px; */
+}
+
+button:hover{
+    background-color:#2d78f4;
+    /* box-shadow: none; */
+}
+
+button:active{
+    background-color:#3385FF;
+    box-shadow: none;
+}
+
+/*清除列表风格*/
+ul, ol {
+    list-style: none;				
+}
+
+/* input {
+    font-family: "Microsoft YaHei", Verdana, sans-serif, "SimSun";
+} */
+
+select, input {
+    vertical-align: middle;
+}
+
+select, input, textarea {
+    font-size: 12px;
+    margin: 0;
+}
+
+textarea {
+    resize: none;
+}
+
+/*防止多行文本框拖动*/
+img {
+    border: 0;
+    vertical-align: middle;
+}
+
+/*  去掉图片低测默认的3像素空白缝隙*/
+/*合并外边线*/
+table {
+    border-collapse: collapse;			
+}
+
+.clearfix:before, .clearfix:after {
+    content: "";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/*IE/7/6*/
+.clearfix {
+    *zoom: 1; 
+}
+
+a {
+    text-decoration: none;
+}
+
+/* a:hover {
+    color: #C81623;
+} */
+
+h1, h2, h3, h4, h5, h6 {
+    text-decoration: none;
+    font-weight: normal;
+    font-size: 100%;
+}
+
+
+/*公共类*/
+.posabs {
+    position:absolute;
+    top:50%;
+    left:50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.dvh {
+    height:80px;
+}
+
+.bd {
+    border: 1px solid #ccc;
+}
+
+.inp {
+    height: 24px;
+    line-height: 24px;
+    font-size: 20px;
+    padding-left: 5px;
+}
+
+.wi {
+    width:100%;
+}
+
+.mb {
+    margin-bottom: 20px;
+}
+
+.w691 {
+    width:691px;
+}

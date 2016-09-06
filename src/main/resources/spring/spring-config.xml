@@ -15,7 +15,7 @@
 
 	<context:component-scan base-package="com.sword.ocean.admin" />
 	<!-- Enables sword-ocean -->
-	<context:component-scan base-package="com.sword.ocean" />
+	<context:component-scan base-package="org.sword.ocean" />
 	<context:annotation-config />
 	<task:annotation-driven/> 
 	

@@ -1,7 +1,7 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	<groupId>com.sword.ocean.admin</groupId>
+	<groupId>org.sword.ocean.admin</groupId>
 	<artifactId>sword-ocean-admin</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>sword-ocean-admin</name>
@@ -189,8 +189,13 @@
 			<version>2.3.4.726</version>
 		</dependency>
 		<dependency>
-			<groupId>com.sword.ocean</groupId>
+			<groupId>org.sword.ocean</groupId>
 			<artifactId>sword-ocean</artifactId>
+			<version>1.0.1</version>
+		</dependency> 
+		<dependency>
+			<groupId>org.sword.lang</groupId>
+			<artifactId>sword-lang</artifactId>
 			<version>1.0.1</version>
 		</dependency> 
 	</dependencies>

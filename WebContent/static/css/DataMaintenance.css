@@ -1,0 +1,277 @@
+
+body, html {
+	width:100%;
+	height:100%;
+}
+
+p {
+	margin-top:8px;
+}
+
+#alr {
+	display:none;
+}
+
+#shadeScript {
+	display:none;
+}
+
+#shadeStore {
+	display:none;
+}
+
+.shade {
+	width:100%;
+	height:100%;
+	position:fixed;
+	background:rgba(0,0,0,0.6);
+	z-index:1000;
+}
+
+.context {
+	color:red;
+	padding:20px 33px;
+	padding-bottom: 75px;
+	border:10px solid #50799B;
+	background:#fff;
+	position:fixed;
+	top:20%;
+	left:50%;
+	-webkit-transform: translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	-o-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+
+.alrbtn {
+	position:absolute;
+	width: 100px;
+    height: 36px;
+    margin: 20px 0;
+    font-size: 20px;
+    bottom:-6px;
+    left:50%;
+    -webkit-transform: translateX(-50%);
+	-moz-transform: translateX(-50%);
+	-ms-transform: translateX(-50%);
+	-o-transform: translateX(-50%);
+    transform:translateX(-50%);
+}
+
+.control {
+	width:400px;
+	height:200px;
+	border:16px solid #333;
+	background:#fff;
+	position:fixed;
+	top:40%;
+	left:50%;
+	-webkit-transform: translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	-o-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+
+.con {
+	height:140px;
+	line-height:140px;
+	text-align:center;
+	font-size:24px;
+	position:relative;
+}
+
+.yes, .no {
+	width:90px;
+	height:30px;
+	font-size:16px;
+}
+
+.yes {
+	margin-left:60px;
+}
+
+.no {
+	margin-left:100px;
+}
+
+
+
+
+.data, .store, .script{
+	width:1000px;
+	min-height:100%;
+	margin:0 auto;
+	position: relative;
+}
+
+h1 {
+	height:120px;
+	padding-bottom:20px;
+	text-align:center;
+	font-size:40px;
+	line-height:100px;
+}
+
+a {
+	position:absolute;
+	bottom:22px;
+	right:16px;
+}
+
+.return span {
+	display: none;
+	position:absolute;
+	width:80px;
+	height:80px;
+	font-size:28px;
+	text-align: center;
+	background-color: #fff;
+	bottom:0;
+	right:0;
+}
+
+.return:hover span {
+	display: block;
+}
+
+.pos {
+	position: relative;
+}
+
+/* 数据添加开始 */
+
+.add-data {
+	padding:0 150px;
+	padding-bottom:50px;
+	border: 1px solid #000;
+}
+
+#exist {
+	color:red;
+	font-size:18px;
+	position: absolute;
+	left:645px;
+	top:314px;
+	display:none;
+}
+
+.sel {
+	width:100%;
+	height:34px;
+	margin:0 auto;
+	margin-bottom:20px;
+	font-size:20px;
+}
+
+.add-data-btn {
+	text-align:center;
+}
+
+.btn {
+	width:100px;
+	height:36px;
+	margin:20px 0;
+	font-size:20px;
+}
+/* 数据添加结束 */
+
+
+/* 添加存储过程开始 */
+#store {
+	display:none;
+}
+
+.addhint {
+	font-size:16px;
+	line-height:16px;
+	padding-bottom:20px;
+	margin-top:-30px;
+}
+
+.add-store {
+	padding:0 150px;
+	padding-bottom:50px;
+	border: 1px solid #000;
+}
+
+#storageList {
+	width:500px;
+	height:34px;
+	font-size:20px;
+}
+
+.btn-add {
+	float:right;
+	width:100px;
+	height:32px;
+	font-size:18px;
+}
+
+.btndv {
+	text-align:center;
+}
+
+.btndv button {
+	width:100px;
+	height:36px;
+	margin:20px 0;
+	font-size:20px;
+}
+
+/* 添加存储过程结束 */
+
+
+/* 添加SQL脚本开始 */
+#script {
+	display:none;
+}
+
+.add-script {
+	padding:0 150px;
+	padding-bottom:50px;
+	border: 1px solid #000;
+}
+
+#hint {
+	font-size:16px;
+	padding-bottom:20px;
+	margin-top:-40px;
+}
+
+.sip-text {
+	width:692px;
+	height:200px;
+	font-size:20px;
+}
+
+.btn-sql-add button {
+	width:100px;
+	height:36px;
+	margin:20px 0;
+	font-size:20px;
+}
+
+.argleft {
+	width:20%;
+}
+
+.argright {
+	float:right;
+	width:75%;
+}
+
+.sip-but {
+	text-align:center;
+}
+
+.sip-btn {
+	width: 100px;
+    height: 36px;
+    margin: 20px 0;
+    font-size: 20px;
+}
+
+/* 添加SQL脚本结束 */
+

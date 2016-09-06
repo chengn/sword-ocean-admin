@@ -1,0 +1,83 @@
+
+.content {
+	width:1000px;
+	border: 1px solid #000;
+	margin: 0 auto;
+}
+
+.title {
+	height:100px;
+	line-height:100px;
+	font-size:30px;
+	text-align:center;
+}
+
+.type-area {
+	margin:0 auto;
+	width:800px;
+}
+
+.typ {
+	width:790px;
+}
+
+.vue {
+	width: 98%;
+	height: 25px;
+	line-height: 28px;
+	font-size: 20px;
+	padding-left: 5px;
+	border:none;
+	outline:none;
+	text-align: center;
+}
+
+.btn-call {
+	width:100px;
+	height:28px;
+	line-height:100%;
+	font-size:20px;
+}
+
+table {
+	width:100%;
+	border-right:1px solid #000;
+	border-bottom:1px solid #000;
+	margin-top:30px;
+	margin-bottom:20px;
+}
+
+table td {
+	height:30px;
+	line-height:30px;
+	text-align:center;
+	font-size:20px;
+	border-left:1px solid #000;
+	border-top:1px solid #000;
+}
+
+.address-bar label {
+	font-size:22px;
+	line-height:26px;
+}
+
+#site {
+	float:right;
+	width:84%;
+	height:24px;
+	line-height:24px;
+	font-size: 20px;
+	padding-left:5px;
+}
+
+#result {
+	margin:20px 0;
+	width: 788px;
+    height: 300px;
+    line-height:22px;
+    color:red;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 0 5px;
+}
+
