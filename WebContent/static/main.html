@@ -6,96 +6,14 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title></title>
-
-		<!-- Bootstrap -->
-		<link href="common/css/bootstrap/bootstrap.min.css" rel="stylesheet">
-		<link href="common/css/honghu/main.css" rel="stylesheet">
-
-		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-		<!--[if lt IE 9]>
-      		<script src="//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      		<script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
-    	<![endif]-->
 	</head>
 
 	<body>
-		<!-- 头部logo -->
-		<div class="title">
-			<img src="static/common/images/logo-03.png" height="100%" style="margin-left: 25px;" />
+	<div style="width:300px; margin-left:auto; margin-right:auto; color:White; height:300px">DIV居中</div>
+		<div style="width:300px; margin-left:auto; margin-right:auto; color:White; height:100px">
+		   <a href="static/home.html" >欢迎使用sword-ocean开发工具</a>
 		</div>
-		
-		<div class="border">
-			<!-- 背景画布 -->
-			<canvas id="Mycanvas"></canvas>
-			
-			<div class="pic border">
-				<img src="common/images/word1-02.png" width="100%" style="margin-top: 150px;" />
-			</div>
-			<!-- 策略区块 -->
-			<div class="pic1 border">
-				<ul class="actions">
-					<li>
-						<a href="market/marketStrategy.html" class="button big">大盘策略</a>
-					</li>
-					<li style="float: right;">
-						<a href="ind/indStrategy.html" class="button big">行业策略</a>
-					</li>
-					
-				</ul>
-			</div>
-		</div>
-		<input  id='btn' type='button' class="button big" name="btntest" value="测  试"/>
-		<input  id='stype' type='text' value="1"/>
-		<input  id='module' type='text' value="test"/>
-		<input  id='name' type='text' value="test_testadd"/>
-		<input  id='script' type='text' value="select * from cn_test where 1=1 "/>
-		<input  id='description' type='text' value="测试添加"/>
-		<input  id='flag' type='text' value="1"/>
-		
-		
-		<input  id='pName1' type='text' value="pa1"/>
-		<input  id='pvalue1' type='text' value=" and id = 1"/>
-		
-		<input  id='pName2' type='text' value="pa2"/>
-		<input  id='pvalue2' type='text' value="and name = 'test'"/>
-
-		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-		<!-- <script src="//cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script> -->
-		<script src="js/jquery/jquery-1.11.2.min.js"></script>
-		<!-- Include all compiled plugins (below), or include individual files as needed -->
 
 	</body>
-<script>
-
-$('#btn').click(function(){
-// 	alert("test")
-	addApi();
-});
-
-function addApi(){
-	var url = "http://10.2.19.16:8080/soa/add"; 
-	var data = 
-	{
-			stype:$('#stype').val(),
-			module:$('#module').val(),
-			name:$('#name').val(),
-			script:$('#script').val(),
-			description:$('#description').val(),
-			flag:$('#flag').val(),
-			param:[
-			       {name:$('#pName1').val(),value:$('#pvalue1').val() },
-			       {name:$('#pName2').val(),value:$('#pvalue2').val() }
-			]
-	};
-	var dataStr = JSON.stringify(data);
-	$.post(url,dataStr,function(result){
-		alert(result);
-	})
-}
-
-
-
-</script>
 </html>
 
