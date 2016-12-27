@@ -154,7 +154,7 @@ public class Admin extends BaseController {
 		paramsMap.put("name", jsonObj.getString("name"));
 		paramsMap.put("script", jsonObj.getString("script"));
 		paramsMap.put("description", jsonObj.getString("description"));
-		if(StringUtils.contains("?", jsonObj.getString("script"))){
+		if(StringUtils.contains( jsonObj.getString("script"),"?")){
 			paramsMap.put("flag", "1");
 		}
 		else{
